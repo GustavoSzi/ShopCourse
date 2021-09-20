@@ -1,0 +1,28 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "MERN Shopping",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "client": "yarn --cwd ./frontend start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoSzi/ShopCourse.git"
+  },
+  "author": "GustavoSzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoSzi/ShopCourse/issues"
+  },
+  "homepage": "https://github.com/GustavoSzi/ShopCourse#readme",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6"
+  }
+}
